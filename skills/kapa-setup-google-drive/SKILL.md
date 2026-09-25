@@ -37,8 +37,8 @@ connected account can see. Both answer with at most 20 results, so pass `name`
 to search rather than expecting the whole Drive back.
 
 Ask the user which folders or files to ingest, and use these tools to turn
-their answer into ids. A personal Drive holds a lot that has nothing to do with
-the product, so this is worth getting right rather than taking everything.
+their answer into ids. Taking everything the account can see is a valid choice,
+so offer it alongside picking specific folders rather than assuming either.
 
 ## 5. Configure it
 

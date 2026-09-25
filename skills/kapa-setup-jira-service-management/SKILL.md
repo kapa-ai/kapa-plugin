@@ -39,8 +39,10 @@ far back requests are read, and the dashboard's own default is the last month
 only. Tell the user the window you are setting and confirm it, rather than
 quietly ingesting four weeks of a multi-year desk.
 
-Narrow with `service_desk_ids_include` when the site has desks the user does
-not want answered from.
+Ask which desks to read. `service_desk_ids_include` takes the ones the user
+picks, and leaving it out reads every desk on the site. Use
+`list_jira_service_desks` to show them the real names rather than asking for
+ids.
 
 ## Set PII masking before you ingest
 

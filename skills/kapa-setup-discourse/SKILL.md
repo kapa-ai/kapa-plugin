@@ -26,8 +26,10 @@ turned off, so filter by category instead.
 `set_discourse_config` with `source_discourse` and `url`, the base URL of the
 forum, such as `https://forum.acme.com`.
 
-Narrow with `match_categories` and `match_tags` when the forum holds sections
-the user does not want answered from.
+Ask which parts of the forum to read. `match_categories` and `match_tags`
+take what the user picks, and leaving both out reads every topic. Use
+`list_discourse_categories` and `list_discourse_tags` to show them the real
+options.
 
 ## Getting good answers out of it
 

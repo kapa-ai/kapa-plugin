@@ -31,11 +31,14 @@ to tell you when they are done, then call `check_zendesk_tickets_connection`
 `configure_zendesk_tickets` with `auth_method` set to `oauth` and the same
 `subdomain`. Without the auth method the grant is never attached.
 
-**Always narrow this one.** Ingesting every ticket ever filed makes answers
-worse, not better, and support tickets are the largest source most teams have.
-Use `ticket_age`, `statuses`, `priorities` and `tags` to keep what is useful,
-and `tags_exclude` to drop what is not. Ask the user which tickets represent
-answers worth reusing.
+Show these options and ask which the user wants. Support tickets are usually
+the largest source a team has, so say what each filter would leave out rather
+than applying one silently.
+
+- `ticket_age`: how far back to read, or all history.
+- `statuses` and `priorities`: which tickets to read, or all of them.
+- `tags`: only tickets carrying these tags. `tags_exclude` drops tickets
+  instead.
 
 ## Set PII masking before you ingest
 

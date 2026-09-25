@@ -38,8 +38,9 @@ append `/api/v2`, and put the locale in `language_code`. So
 and `language_code=en-us`. Putting the locale in both doubles it in every
 ingested link.
 
-Narrow with `include_categories` and `include_sections` when the help center
-holds content the user does not want answered from.
+Ask which parts of the help center to read. `include_categories` and
+`include_sections` take what the user picks, and leaving both out reads the
+whole help center.
 
 ## Notes
 
