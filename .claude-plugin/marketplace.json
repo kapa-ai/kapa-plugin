@@ -1,0 +1,14 @@
+{
+  "name": "kapa",
+  "owner": {
+    "name": "kapa.ai",
+    "url": "https://www.kapa.ai"
+  },
+  "plugins": [
+    {
+      "name": "kapa",
+      "source": "./",
+      "description": "Set up and inspect a Kapa project from your agent. Connects knowledge sources, checks what was ingested, and reads the analytics."
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "kapa": {
+      "url": "http://localhost:8004/mcp"
+    }
+  }
+}

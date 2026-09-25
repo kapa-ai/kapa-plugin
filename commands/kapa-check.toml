@@ -1,0 +1,2 @@
+description = "Check what a Kapa project holds and whether it answers"
+prompt = "Call list_sources for my Kapa project and show me what it holds and where each source has got to. Then ask me a question my content should answer, call search_project_knowledge with it, and show me what comes back. If the answer is thin or wrong, say what would cause that rather than declaring success."

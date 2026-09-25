@@ -1,0 +1,41 @@
+{
+  "name": "kapa",
+  "version": "0.1.0",
+  "description": "Set up and inspect a Kapa project from your agent. Connects knowledge sources, checks what was ingested, and reads the analytics.",
+  "author": {
+    "name": "kapa.ai",
+    "url": "https://www.kapa.ai"
+  },
+  "homepage": "https://docs.kapa.ai",
+  "repository": "https://github.com/kapa-ai/kapa-plugin",
+  "license": "MIT",
+  "keywords": [
+    "kapa",
+    "rag",
+    "documentation",
+    "mcp",
+    "ingestion"
+  ],
+  "skills": "./skills/",
+  "commands": "./commands/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Kapa",
+    "shortDescription": "Set up a Kapa project from your agent",
+    "longDescription": "Connect knowledge sources to Kapa, watch them ingest, then query the project and read its analytics, without leaving your agent.",
+    "developerName": "kapa.ai",
+    "category": "Productivity",
+    "capabilities": [
+      "MCP server",
+      "Skills",
+      "Slash commands"
+    ],
+    "websiteURL": "https://www.kapa.ai",
+    "defaultPrompt": [
+      "Set up my Kapa project.",
+      "Add our documentation site to Kapa.",
+      "What are people asking that our docs do not cover?"
+    ],
+    "brandColor": "#3752da"
+  }
+}

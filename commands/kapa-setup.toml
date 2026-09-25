@@ -1,0 +1,2 @@
+description = "Set up a Kapa project: connect a knowledge source and check it ingests"
+prompt = "Set up my Kapa project using the kapa MCP server. Start by calling list_projects to confirm I am signed in; if it fails with an authentication error, tell me to run /mcp and sign in, then wait for me before retrying. Ask which project if there is more than one. Then ask what I want Kapa to answer questions about, and load the matching kapa-setup-* skill for what I choose rather than working the calls out yourself. Do not pick filters for me: show the options and ask."

@@ -1,0 +1,11 @@
+{
+  "name": "kapa",
+  "version": "0.1.0",
+  "description": "Set up and inspect a Kapa project from your agent.",
+  "contextFileName": "AGENTS.md",
+  "mcpServers": {
+    "kapa": {
+      "httpUrl": "http://localhost:8004/mcp"
+    }
+  }
+}

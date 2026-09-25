@@ -1,0 +1,2 @@
+description = "Show what people ask that Kapa cannot answer"
+prompt = "Show me where my Kapa project falls short. Call list_coverage_gaps_periods for my project, then get_coverage_gaps with the most recent period id to see what people asked that my content does not cover. Do the same with list_top_questions_periods and get_top_questions for what they ask most. Summarise both and suggest what content would close the biggest gaps."
