@@ -25,13 +25,24 @@ source type.
 /plugin install kapa
 ```
 
-### Cursor, Codex, Gemini, opencode
+### Codex
 
-Clone the repo and point your client at it, or add the server directly:
+```bash
+codex plugin marketplace add kapa-ai/kapa-plugin
+codex plugin add kapa@kapa
+```
+
+### Every other client
+
+Add the MCP server to your client's configuration:
 
 ```json
 { "mcpServers": { "kapa": { "url": "http://localhost:8004/mcp" } } }
 ```
+
+Then copy `skills/` into wherever that client reads skills from, so the agent
+gets the call sequences rather than only the tool list.
+
 
 ## Use it
 
