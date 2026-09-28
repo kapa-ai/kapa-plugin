@@ -15,7 +15,7 @@ preview, so a change means previewing again.
 
 ## 1. Create the source
 
-`create_web_source` with `project` and `name`. Name it after the site, such as
+`create_web_crawl_source` with `project` and `name`. Name it after the site, such as
 "Acme docs". Keep the returned source id.
 
 ## 2. Say what to crawl

@@ -24,7 +24,7 @@ there is no publish step to look for.
 A web crawl is the exception. It ingests nothing until `start_crawl` runs, and
 it is worth previewing first:
 
-1. `create_web_source`, then `set_crawl_config`
+1. `create_web_crawl_source`, then `set_crawl_config`
 2. `preview_crawl` and `list_preview_pages` to see what it finds
 3. `inspect_content_selector` until the extracted text is the article body
 4. `set_content_selector`, then `start_crawl`
