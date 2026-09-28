@@ -52,8 +52,12 @@ Community threads contain wrong answers as well as right ones.
 - `support_user_ids` marks whose replies count as answers. This is how Kapa
   tells a maintainer's answer from a guess, so ask which people are their
   support team.
-- `thread_age` limits how far back to read. Old threads often describe versions
-  that no longer exist.
+- `include_only_threads_with_support_user_answers` limits ingestion to threads
+  one of those people replied to. Ask whether they want that.
+- `users_to_exclude` leaves out messages from these user ids, typically bots.
+  `list_slack_users` turns names into ids.
+- `thread_age` limits how far back to read, in months: `1m` to `36m`, or
+  `all`. Old threads often describe versions that no longer exist.
 
 ## When it ingests nothing
 

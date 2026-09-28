@@ -22,7 +22,8 @@ account cannot read it.
 credential can read the site. Do this before saving anything: a wrong token
 otherwise shows up as a source that silently ingests nothing.
 
-A false here is most often the `/wiki` suffix rather than a bad token.
+A false here is most often a `/wiki` suffix on the URL rather than a bad
+token. Pass the site root only.
 
 Then `list_confluence_spaces` with the same arguments shows what that account
 can see. Show the user the real space names and ask which to ingest, rather
@@ -36,8 +37,9 @@ first: without it, it walks every visible space.
 `set_confluence_config` with `source_confluence`, `url`, `email` and
 `api_token`.
 
-- `url` is the site base **including `/wiki`**, such as
-  `https://acme.atlassian.net/wiki`.
+- `url` is the site root **without `/wiki`**, such as
+  `https://acme.atlassian.net`. Kapa adds `/wiki` itself, and a URL that
+  already ends in it breaks ingestion.
 - `email` is the Atlassian account the token belongs to. Ask for it; do not
   guess it from the user's other accounts.
 - `api_token` is their secret. Ask for it, never invent one.

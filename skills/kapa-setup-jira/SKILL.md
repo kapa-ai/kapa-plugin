@@ -41,9 +41,13 @@ health, not an empty list.
 
 Ask the user how to narrow it, rather than choosing yourself:
 
-- `ticket_age`: how far back to read, or all history. Left out, this reads
-  every ticket ever filed, which on a large site is a lot of content.
+- `ticket_age`: how far back to read by creation date, in months (`1m` to
+  `36m`) or `all`. Left out, this reads every issue ever filed, which on a
+  large site is a lot of content.
 - `projects_include`: which project keys (such as `ENG`) to read, or all.
+- `status_include`, `resolution_include` and `issuetype_include`: the names
+  from the matching list tool, to read only resolved bugs, for example.
+  Left out, each reads every value.
 
 ## What it holds
 

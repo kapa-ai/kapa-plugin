@@ -31,6 +31,10 @@ take what the user picks, and leaving both out reads every topic. Use
 `list_discourse_categories` and `list_discourse_tags` to show them the real
 options.
 
+Pass categories by **name or slug**, never by numeric id. An id matches
+nothing, and ingestion then drops the category filter and reads the whole
+forum.
+
 ## Getting good answers out of it
 
 Forum threads contain wrong answers as well as right ones, so ask the user

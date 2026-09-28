@@ -25,7 +25,29 @@ the request types.
 The request types cannot be scoped to one desk and carry no desk id, so names
 repeat across desks. Show the whole list rather than matching on a name.
 
-## 4. Configure it
+## 4. Ask whether to ingest this at all
+
+Service desk requests often carry customer names, email addresses and private
+internal comments. Ask whether that content should be ingested at all before
+setting this up on a project that serves external users.
+
+## 5. Set PII masking
+
+This source carries customer names, email addresses and account details, so
+set masking up front. Setting it later works, since `update_source` queues the
+already-ingested items to be reprocessed under the new rules, but that spends
+quota re-reading everything. Doing it first avoids the second pass.
+
+Call `update_source` with `markdown_pii_config` first, for example
+`{"entities": ["EMAIL_ADDRESS", "PERSON", "PHONE_NUMBER"]}`. The available
+entities are PHONE_NUMBER, EMAIL_ADDRESS, PERSON, CREDIT_CARD and IBAN_CODE.
+Use `allow_list` for strings that look like PII but should stay, such as a
+support alias.
+
+Ask the user what should be redacted. Do not assume, and do not skip this
+because they did not raise it.
+
+## 6. Configure it
 
 `set_jira_service_management_config` with `source_jira_service_management`,
 `base_url`, `username` and `api_token`.
@@ -44,27 +66,8 @@ picks, and leaving it out reads every desk on the site. Use
 `list_jira_service_desks` to show them the real names rather than asking for
 ids.
 
-## Set PII masking before you ingest
-
-This source carries customer names, email addresses and account details, so
-set masking up front. Setting it later works, since `update_source` queues the
-already-ingested items to be reprocessed under the new rules, but that spends
-quota re-reading everything. Doing it first avoids the second pass.
-
-Call `update_source` with `markdown_pii_config` first, for example
-`{"entities": ["EMAIL_ADDRESS", "PERSON", "PHONE_NUMBER"]}`. The available
-entities are PHONE_NUMBER, EMAIL_ADDRESS, PERSON, CREDIT_CARD and IBAN_CODE.
-Use `allow_list` for strings that look like PII but should stay, such as a
-support alias.
-
-Ask the user what should be redacted. Do not assume, and do not skip this
-because they did not raise it.
-
-## Worth asking about
-
-Service desk requests often carry customer names, email addresses and private
-internal comments. Ask whether that content should be ingested at all before
-setting this up on a project that serves external users.
+Ask which request types to read as well. `request_type_ids_include` and
+`request_type_ids_exclude` take ids from `list_jira_request_types`.
 
 ## Finish the job
 

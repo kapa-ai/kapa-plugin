@@ -48,7 +48,13 @@ One source covers one channel.
 
 - `support_user_ids` marks whose replies count as answers. Ask which people or
   roles are their support team.
-- `thread_age` limits how far back to read.
+- `include_only_threads_with_support_user_answers` limits ingestion to threads
+  one of those people replied to. Ask whether they want that.
+- `users_to_exclude` leaves out messages from these user ids, typically bots.
+  `list_discord_users` turns names into ids. It lists everyone who can view
+  the channel, not only people who posted.
+- `thread_age` limits how far back to read, in months: `1m` to `36m`, or
+  `all`.
 
 ## When it ingests nothing
 

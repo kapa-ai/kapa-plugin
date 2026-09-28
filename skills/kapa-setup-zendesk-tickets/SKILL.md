@@ -26,21 +26,13 @@ The approval happens in the browser, so there is nothing to poll. Ask the user
 to tell you when they are done, then call `check_zendesk_tickets_connection`
 **once**.
 
-## 4. Configure what it ingests
+## 4. Ask whether to ingest this at all
 
-`configure_zendesk_tickets` with `auth_method` set to `oauth` and the same
-`subdomain`. Without the auth method the grant is never attached.
+Support tickets routinely contain customer names, email addresses and account
+details. Ask whether that should be ingested at all before setting this up on
+a project that serves external users.
 
-Show these options and ask which the user wants. Support tickets are usually
-the largest source a team has, so say what each filter would leave out rather
-than applying one silently.
-
-- `ticket_age`: how far back to read, or all history.
-- `statuses` and `priorities`: which tickets to read, or all of them.
-- `tags`: only tickets carrying these tags. `tags_exclude` drops tickets
-  instead.
-
-## Set PII masking before you ingest
+## 5. Set PII masking
 
 This source carries customer names, email addresses and account details, so
 set masking up front. Setting it later works, since `update_source` queues the
@@ -56,11 +48,19 @@ support alias.
 Ask the user what should be redacted. Do not assume, and do not skip this
 because they did not raise it.
 
-## Worth asking about
+## 6. Configure what it ingests
 
-Support tickets routinely contain customer names, email addresses and account
-details. Ask whether that should be ingested at all before setting this up on
-a project that serves external users.
+`configure_zendesk_tickets` with `auth_method` set to `oauth` and the same
+`subdomain`. Without the auth method the grant is never attached.
+
+Show these options and ask which the user wants. Support tickets are usually
+the largest source a team has, so say what each filter would leave out rather
+than applying one silently.
+
+- `ticket_age`: how far back to read, or all history.
+- `statuses` and `priorities`: which tickets to read, or all of them.
+- `tags`: only tickets carrying these tags. `tags_exclude` drops tickets
+  instead.
 
 ## Notes
 

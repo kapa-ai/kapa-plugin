@@ -8,9 +8,8 @@ description: Set up a Kapa Google Drive source so documents in a Drive are inges
 Connects through OAuth, so the user approves it in their browser.
 
 Unlike the other OAuth sources, the grant belongs to the **signed-in user, not
-the source**. Connect once and it serves every Google Drive source that user
-sets up next. It also means two Google Drive setups cannot run at the same
-time, so finish one before starting another.
+the source**, and configuring a source uses it up. Connect again for each
+Google Drive source, and never run two Google Drive setups at the same time.
 
 ## 1. Create the source
 
@@ -37,16 +36,18 @@ connected account can see. Both answer with at most 20 results, so pass `name`
 to search rather than expecting the whole Drive back.
 
 Ask the user which folders or files to ingest, and use these tools to turn
-their answer into ids. Taking everything the account can see is a valid choice,
-so offer it alongside picking specific folders rather than assuming either.
+their answer into ids. There is no "everything" option: the source reads only
+the folders and files you name.
 
 ## 5. Configure it
 
 `configure_google_drive` with `source_google_drive` and the ids:
 
-- `folder_ids_include` and `file_ids_include` take what to read.
+- `folder_ids_include` and `file_ids_include` take what to read. They add up:
+  named files are read on top of the files in named folders.
 - `folder_ids_exclude` and `file_ids_exclude` drop things from a wider set.
-- Leaving all four out ingests everything the connected account can see.
+- Pass at least one folder or file to include. With none, the configuration
+  saves but ingests nothing.
 
 No credential travels here. The connection supplies the token and the account
 email, so never ask the user for either.
