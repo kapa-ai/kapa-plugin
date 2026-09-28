@@ -3,7 +3,7 @@
   "mcp": {
     "kapa": {
       "type": "remote",
-      "url": "http://localhost:8004/mcp",
+      "url": "https://mcp.kapa.ai/mcp",
       "enabled": true
     }
   }

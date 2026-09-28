@@ -12,10 +12,6 @@ source type.
   and the setup steps people miss.
 - **Three commands**: `/kapa-setup`, `/kapa-check`, `/kapa-gaps`.
 
-> **Local testing.** The manifests point at `http://localhost:8004/mcp`, where
-> kapa-mcp runs in the dev workspace. Switch them to `https://mcp.kapa.ai/mcp`
-> before publishing.
-
 ## Install
 
 ### Claude Code
@@ -37,7 +33,7 @@ codex plugin add kapa@kapa
 Add the MCP server to your client's configuration:
 
 ```json
-{ "mcpServers": { "kapa": { "url": "http://localhost:8004/mcp" } } }
+{ "mcpServers": { "kapa": { "url": "https://mcp.kapa.ai/mcp" } } }
 ```
 
 Then copy `skills/` into wherever that client reads skills from, so the agent

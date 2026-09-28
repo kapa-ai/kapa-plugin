@@ -5,7 +5,7 @@
   "contextFileName": "AGENTS.md",
   "mcpServers": {
     "kapa": {
-      "httpUrl": "http://localhost:8004/mcp"
+      "httpUrl": "https://mcp.kapa.ai/mcp"
     }
   }
 }

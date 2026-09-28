@@ -2,7 +2,7 @@
   "mcpServers": {
     "kapa": {
       "type": "http",
-      "url": "http://localhost:8004/mcp"
+      "url": "https://mcp.kapa.ai/mcp"
     }
   }
 }
