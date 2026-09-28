@@ -42,7 +42,9 @@ the user chose rather than working it out from tool descriptions.
 
 - **Credentials belong to the user.** Ask for every token and key. Never
   invent one, never reuse one across sources.
-- **Ingesting spends quota.** Confirm before `start_crawl`.
+- **Ingesting spends quota.** Saving a source's configuration starts
+  ingestion, and so does `start_crawl` for a web crawl. Confirm with the user
+  before either.
 - **Do not choose filters for people.** What belongs in a knowledge base
   differs per team, so show the options and ask.
 - **Check before you save.** Every source has a validate tool and most have
