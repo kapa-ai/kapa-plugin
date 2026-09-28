@@ -1,8 +1,9 @@
 # Kapa
 
-Kapa turns a team's technical content into a RAG assistant. This plugin
-connects your agent to the Kapa platform so you can set a project up, watch it
-ingest, query it, and read its analytics without leaving the terminal.
+Kapa is an ingestion and retrieval system for a team's unstructured knowledge.
+This plugin connects your agent to the Kapa platform so you can set a project
+up, watch it ingest, query it, and read its analytics without leaving the
+terminal.
 
 ## Signing in
 
