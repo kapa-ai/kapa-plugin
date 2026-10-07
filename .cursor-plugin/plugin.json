@@ -1,0 +1,22 @@
+{
+  "name": "kapa",
+  "displayName": "Kapa",
+  "version": "0.1.0",
+  "minClientVersions": {
+    "cursor": "3.13.0"
+  },
+  "description": "Connect your docs, tickets, wikis and 20+ other sources. Launch an accurate support agent on your website, or plug Kapa into the agents you already have.",
+  "author": {
+    "name": "Kapa",
+    "email": "support@kapa.ai"
+  },
+  "homepage": "https://www.kapa.ai/",
+  "repository": "https://github.com/kapa-ai/kapa-plugin",
+  "license": "MIT",
+  "logo": "assets/icon.png",
+  "keywords": ["knowledge base", "retrieval", "rag", "ai agent", "support agent", "ai chatbot", "customer support", "support tickets", "documentation", "web crawl", "mcp"],
+  "category": "integrations",
+  "tags": ["knowledge", "retrieval", "support", "mcp"],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json"
+}
