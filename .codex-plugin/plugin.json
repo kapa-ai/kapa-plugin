@@ -17,7 +17,6 @@
     "ingestion"
   ],
   "skills": "./skills/",
-  "commands": "./commands/",
   "mcpServers": "./.mcp.json",
   "interface": {
     "displayName": "Kapa",
@@ -27,8 +26,7 @@
     "category": "Productivity",
     "capabilities": [
       "MCP server",
-      "Skills",
-      "Slash commands"
+      "Skills"
     ],
     "websiteURL": "https://www.kapa.ai",
     "defaultPrompt": [
