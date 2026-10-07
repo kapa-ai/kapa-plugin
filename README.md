@@ -1,10 +1,20 @@
 # Kapa plugin
-One knowledge base from your docs, tickets, wikis and code. 
-Connect Zendesk, Confluence, Notion, GitHub, Slack and 20+ more, then search it or deploy it as MCP.
 
-The plugin can set up and inspect a [Kapa](https://www.kapa.ai) project from your coding
-agent. Connects the hosted Kapa MCP server and bundles a skill for every
-source type.
+A plugin that bundles the Kapa platform MCP server with skills for agents, so
+your agent can set up knowledge sources, search them and read analytics in a
+Kapa project. Sign in once and the tools act as you, with your Kapa
+permissions.
+
+[Kapa](https://www.kapa.ai) is an ingestion and retrieval system.
+[Ingestion](https://docs.kapa.ai/knowledge-sources/data-ingestion) builds one
+knowledge base from [20+ types of sources](https://docs.kapa.ai/knowledge-sources)
+and keeps it up to date as that content changes.
+[Agentic retrieval](https://docs.kapa.ai/retrieval) searches across it to find
+what an agent needs. You hand Kapa to your agents as a search tool via
+[MCP](https://docs.kapa.ai/retrieval/hosted-mcp-server) or the
+[API](https://docs.kapa.ai/retrieval/http-api), or use one of the
+[prebuilt agents](https://docs.kapa.ai/integrations), such as a website widget
+or a Slack bot.
 
 ## Install
 
