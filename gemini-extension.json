@@ -1,7 +1,7 @@
 {
   "name": "kapa",
   "version": "0.1.0",
-  "description": "Set up and inspect a Kapa project from your agent.",
+  "description": "Give your agents a knowledge base that stays up to date. Connect websites, tickets and 30+ other sources.",
   "contextFileName": "AGENTS.md",
   "mcpServers": {
     "kapa": {
