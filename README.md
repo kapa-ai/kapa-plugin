@@ -12,7 +12,7 @@ source type.
   as you, with your real permissions.
 - **19 setup skills**, one per source type, each carrying the exact call order
   and the setup steps people miss.
-- **Three commands**: `/kapa-setup`, `/kapa-check`, `/kapa-gaps`.
+- **Three workflow skills**: `kapa-setup`, `kapa-check`, `kapa-gaps`.
 
 ## Install
 
@@ -45,10 +45,13 @@ gets the call sequences rather than only the tool list.
 ## Use it
 
 ```
-/kapa-setup     connect a knowledge source
-/kapa-check     see what the project holds and whether it answers
-/kapa-gaps      find what people ask that your content does not cover
+kapa-setup     connect a knowledge source
+kapa-check     see what the project holds and whether it answers
+kapa-gaps      find what people ask that your content does not cover
 ```
+
+Run a skill by name, such as `/kapa:kapa-setup` in Claude Code, or describe the
+task and the agent loads the matching skill.
 
 Or just ask: *"add our documentation site to Kapa"*.
 
