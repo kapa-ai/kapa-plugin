@@ -10,7 +10,10 @@ source type.
   as you, with your real permissions.
 - **19 setup skills**, one per source type, each carrying the exact call order
   and the setup steps people miss.
-- **Three commands**: `/kapa-setup`, `/kapa-check`, `/kapa-gaps`.
+- **A docs workflow skill** that turns coverage gaps and feedback into
+  documentation fixes, and tracks each gap's status in Kapa until the fix is
+  published and answerable.
+- **Four commands**: `/kapa-setup`, `/kapa-check`, `/kapa-gaps`, `/kapa-docs`.
 
 ## Install
 
@@ -46,6 +49,7 @@ gets the call sequences rather than only the tool list.
 /kapa-setup     connect a knowledge source
 /kapa-check     see what the project holds and whether it answers
 /kapa-gaps      find what people ask that your content does not cover
+/kapa-docs      write docs that close those gaps, and track them to resolved
 ```
 
 Or just ask: *"add our documentation site to Kapa"*.

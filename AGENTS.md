@@ -38,6 +38,16 @@ the out-of-band setup people miss, such as inviting a Slack bot to the channel
 or sharing Notion pages with the integration. Load the one that matches what
 the user chose rather than working it out from tool descriptions.
 
+## Closing coverage gaps
+
+To turn coverage gaps or feedback into documentation, load the
+`kapa-docs-from-gaps` skill. It covers finding the gaps and untriaged feedback,
+drafting the fix, and tracking each gap's status in Kapa (in progress, resolved
+or dismissed) across runs. Gap statuses are kept on the project's saved gaps
+list, so check `list_coverage_gap_records` before working on a gap. A gap found
+again in a new period is linked to its existing entry by passing `record_id` to
+`update_coverage_gap`, rather than starting a second entry.
+
 ## Rules that matter
 
 - **Credentials belong to the user.** Ask for every token and key. Never
