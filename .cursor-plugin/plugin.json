@@ -5,7 +5,7 @@
   "minClientVersions": {
     "cursor": "3.13.0"
   },
-  "description": "Set up, search, and improve Kapa knowledge bases: connect sources, preview and run crawls, and find coverage gaps.",
+  "description": "Connect your docs, tickets, wikis and 20+ other sources. Launch an accurate support agent on your website, or plug Kapa into the agents you already have.",
   "author": {
     "name": "Kapa",
     "email": "support@kapa.ai"
@@ -14,9 +14,9 @@
   "repository": "https://github.com/kapa-ai/kapa-plugin",
   "license": "MIT",
   "logo": "assets/icon.png",
-  "keywords": ["kapa", "rag", "documentation", "knowledge-base", "mcp", "ingestion"],
+  "keywords": ["knowledge base", "retrieval", "rag", "ai agent", "support agent", "ai chatbot", "customer support", "support tickets", "documentation", "web crawl", "mcp"],
   "category": "integrations",
-  "tags": ["mcp", "documentation", "knowledge-base", "kapa"],
+  "tags": ["knowledge", "retrieval", "support", "mcp"],
   "skills": "./skills/",
   "mcpServers": "./.mcp.json"
 }

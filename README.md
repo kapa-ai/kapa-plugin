@@ -1,6 +1,6 @@
 # Kapa plugin
 One knowledge base from your docs, tickets, wikis and code. 
-Connect Zendesk, Confluence, Notion, GitHub, Slack and 15+ more, then search it or deploy it as MCP.
+Connect Zendesk, Confluence, Notion, GitHub, Slack and 20+ more, then search it or deploy it as MCP.
 
 The plugin can set up and inspect a [Kapa](https://www.kapa.ai) project from your coding
 agent. Connects the hosted Kapa MCP server and bundles a skill for every
