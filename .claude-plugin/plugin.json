@@ -2,9 +2,10 @@
   "name": "kapa",
   "displayName": "Kapa",
   "version": "0.1.0",
-  "description": "Set up and inspect a Kapa project from your agent. Connects knowledge sources, checks what was ingested, and reads the analytics.",
+  "description": "Connect Claude to Kapa to search all your company's knowledge from one place, and put that same knowledge to work in your own agents and on your website. Kapa ingests 20+ source types into one knowledge base, syncs only what changed so most sources stay current within minutes, and returns results with source links.",
   "author": {
     "name": "Kapa",
+    "email": "support@kapa.ai",
     "url": "https://www.kapa.ai"
   },
   "homepage": "https://docs.kapa.ai",
@@ -14,7 +15,7 @@
   "icon": "./assets/icon.png",
   "repository": "https://github.com/kapa-ai/kapa-plugin",
   "license": "MIT",
-  "keywords": ["kapa", "rag", "documentation", "mcp", "ingestion"],
+  "keywords": ["knowledge base", "retrieval", "rag", "ai agent", "support agent", "ai chatbot", "customer support", "support tickets", "documentation", "web crawl", "mcp"],
   "skills": "./skills/",
   "mcpServers": "./.mcp.json"
 }

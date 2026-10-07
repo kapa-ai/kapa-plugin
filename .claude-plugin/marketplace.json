@@ -1,5 +1,6 @@
 {
   "name": "kapa",
+  "description": "The Kapa plugin for AI agents.",
   "owner": {
     "name": "Kapa",
     "url": "https://www.kapa.ai"
