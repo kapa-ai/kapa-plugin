@@ -1,5 +1,6 @@
 {
   "name": "kapa",
+  "displayName": "Kapa",
   "version": "0.1.0",
   "description": "Set up and inspect a Kapa project from your agent. Connects knowledge sources, checks what was ingested, and reads the analytics.",
   "author": {
@@ -7,6 +8,9 @@
     "url": "https://www.kapa.ai"
   },
   "homepage": "https://docs.kapa.ai",
+  "privacyPolicyUrl": "https://www.kapa.ai/content/privacy-policy",
+  "termsOfServiceUrl": "https://www.kapa.ai/content/terms-of-service",
+  "supportUrl": "https://support.kapa.ai/",
   "repository": "https://github.com/kapa-ai/kapa-plugin",
   "license": "MIT",
   "keywords": ["kapa", "rag", "documentation", "mcp", "ingestion"],
