@@ -27,7 +27,7 @@
   "mcpServers": "./.mcp.json",
   "interface": {
     "displayName": "Kapa",
-    "shortDescription": "Set up a Kapa project from your agent",
+    "shortDescription": "Search all company knowledge",
     "longDescription": "Connect knowledge sources to Kapa, watch them ingest, then query the project and read its analytics, without leaving your agent.",
     "developerName": "Kapa",
     "category": "Productivity",
