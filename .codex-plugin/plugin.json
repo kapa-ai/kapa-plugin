@@ -1,7 +1,7 @@
 {
   "name": "kapa",
-  "version": "0.1.0",
-  "description": "Set up and inspect a Kapa project from your agent. Connects knowledge sources, checks what was ingested, and reads the analytics.",
+  "version": "0.1.1",
+  "description": "Search all your company's knowledge from one place with Kapa, and put that same knowledge to work in your own agents and on your website. Kapa ingests 20+ source types into one knowledge base, syncs only what changed so most sources stay current within minutes, and returns results with source links.",
   "author": {
     "name": "Kapa",
     "email": "support@kapa.ai",
@@ -11,30 +11,44 @@
   "repository": "https://github.com/kapa-ai/kapa-plugin",
   "license": "MIT",
   "keywords": [
-    "kapa",
+    "knowledge base",
+    "retrieval",
     "rag",
+    "ai agent",
+    "support agent",
+    "ai chatbot",
+    "customer support",
+    "support tickets",
     "documentation",
-    "mcp",
-    "ingestion"
+    "web crawl",
+    "mcp"
   ],
   "skills": "./skills/",
   "mcpServers": "./.mcp.json",
   "interface": {
     "displayName": "Kapa",
-    "shortDescription": "Set up a Kapa project from your agent",
-    "longDescription": "Connect knowledge sources to Kapa, watch them ingest, then query the project and read its analytics, without leaving your agent.",
+    "shortDescription": "Search all company knowledge",
+    "longDescription": "Search all your company's knowledge from one place with Kapa, and put that same knowledge to work in your own agents and on your website. Kapa ingests 20+ source types into one knowledge base, syncs only what changed so most sources stay current within minutes, and returns results with source links.",
     "developerName": "Kapa",
     "category": "Productivity",
     "capabilities": [
-      "MCP server",
-      "Skills"
+      "Interactive",
+      "Read",
+      "Write"
     ],
     "websiteURL": "https://www.kapa.ai",
+    "supportURL": "https://support.kapa.ai/",
+    "privacyPolicyURL": "https://www.kapa.ai/content/privacy-policy",
+    "termsOfServiceURL": "https://www.kapa.ai/content/terms-of-service",
     "defaultPrompt": [
       "Set up my Kapa project.",
       "Add our documentation site to Kapa.",
       "What are people asking that our docs do not cover?"
     ],
-    "brandColor": "#3752da"
+    "brandColor": "#3752da",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/icon.png",
+    "logoDark": "./assets/icon.png",
+    "screenshots": []
   }
 }
