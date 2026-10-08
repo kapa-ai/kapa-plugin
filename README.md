@@ -32,6 +32,17 @@ codex plugin marketplace add kapa-ai/kapa-plugin
 codex plugin add kapa@kapa
 ```
 
+### Cursor
+
+Inside Cursor's agent chat:
+
+```
+/add-plugin kapa
+```
+
+Or install the plugin from its
+[Cursor Marketplace listing](https://cursor.com/marketplace/kapa).
+
 ### Every other client
 
 Add the MCP server to your client's configuration:
