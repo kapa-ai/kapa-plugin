@@ -28,7 +28,7 @@
   "interface": {
     "displayName": "Kapa",
     "shortDescription": "Search all company knowledge",
-    "longDescription": "Connect knowledge sources to Kapa, watch them ingest, then query the project and read its analytics, without leaving your agent.",
+    "longDescription": "Search all your company's knowledge from one place with Kapa, and put that same knowledge to work in your own agents and on your website. Kapa ingests 20+ source types into one knowledge base, syncs only what changed so most sources stay current within minutes, and returns results with source links.",
     "developerName": "Kapa",
     "category": "Productivity",
     "capabilities": [
