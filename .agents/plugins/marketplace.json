@@ -1,0 +1,20 @@
+{
+  "name": "kapa",
+  "interface": {
+    "displayName": "Kapa"
+  },
+  "plugins": [
+    {
+      "name": "kapa",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

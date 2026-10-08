@@ -30,11 +30,15 @@
       "Skills"
     ],
     "websiteURL": "https://www.kapa.ai",
+    "privacyPolicyURL": "https://www.kapa.ai/content/privacy-policy",
+    "termsOfServiceURL": "https://www.kapa.ai/content/terms-of-service",
     "defaultPrompt": [
       "Set up my Kapa project.",
       "Add our documentation site to Kapa.",
       "What are people asking that our docs do not cover?"
     ],
-    "brandColor": "#3752da"
+    "brandColor": "#3752da",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/icon.png"
   }
 }
