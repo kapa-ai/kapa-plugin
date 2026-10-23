@@ -29,7 +29,8 @@ it is worth previewing first:
 3. `inspect_content_selector` until the extracted text is the article body
 4. `set_content_selector`, then `start_crawl`
 
-Only the last step spends the team's quota.
+Only the last step ingests, but pages fetched by the preview in step 2 count
+toward the team's monthly crawled page quota too.
 
 ## The skills
 

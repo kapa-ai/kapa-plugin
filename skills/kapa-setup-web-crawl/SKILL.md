@@ -6,8 +6,10 @@ description: Set up a Kapa web crawl source so a documentation site is ingested.
 # Set up a web crawl
 
 Three things happen in order: find the right pages, extract the right text from
-them, then ingest. The first two are free and repeatable, the third spends the
-team's quota. So judge the first two before doing the third.
+them, then ingest. The first two are repeatable and ingest nothing, but the
+preview fetches real pages, so it counts toward the team's monthly crawled page
+quota just as the ingest does. So keep previews small, and judge the first two
+before doing the third.
 
 A source cannot be ingested until it has been previewed with the exact
 configuration you intend to ingest with. Changing the crawl config retires the
@@ -35,8 +37,8 @@ loopback host is rejected, since the crawler cannot reach it.
 
 ## 3. Preview the crawl
 
-`preview_crawl` with the source `id` and `page_limit: 50`. Nothing is ingested
-and no quota is spent.
+`preview_crawl` with the source `id` and `page_limit: 50`. Nothing is ingested,
+but every page it fetches counts toward the team's monthly crawled page quota.
 
 Then `get_crawl_status` until it leaves `PENDING` and `IN_PROGRESS`. `SUCCESS`
 means it finished, `FAILURE` carries the reason. Poll every couple of seconds
