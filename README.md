@@ -107,9 +107,29 @@ returns. To put it in front of users or agents, use the
 
 Every question that flows through Kapa, whichever agent or interface asked it,
 is kept as a conversation. This plugin gives your agent access to Kapa's
-[analytics](https://docs.kapa.ai/analytics), so it can pull the
+[analytics](https://docs.kapa.ai/analytics): the
 [top questions](https://docs.kapa.ai/analytics/top-questions) and
-[coverage gaps](https://docs.kapa.ai/analytics/coverage-gaps) for a period, or
-look through [conversations](https://docs.kapa.ai/analytics/conversations).
-`kapa-gaps` combines the latest gaps and top questions into suggestions for
-what to write next.
+[coverage gaps](https://docs.kapa.ai/analytics/coverage-gaps) for a period,
+[conversations](https://docs.kapa.ai/analytics/conversations) filtered by
+uncertain answers, feedback, text or language,
+[source usage](https://docs.kapa.ai/analytics/source-analytics) with the pages
+behind bad answers, activity and satisfaction ratings over time, the self-serve
+rate, time saved and deflections, and the feedback agents leave through your
+hosted MCP servers.
+
+- `kapa-improve-docs` improves a documentation repository from what people
+  ask. It combines coverage gaps, uncertain and downvoted answers, top
+  questions and source usage into one worklist, checks each item against the
+  docs, and works through it with you or opens pull requests. If you keep an
+  internal Kapa project with your support tickets or wiki, it uses it to tell
+  missing documentation from unsupported features. Run it from your docs
+  repository and ask: *"improve our docs from what people asked last month"*.
+- `kapa-analytics-report` writes a report for a period: the numbers against the
+  previous period, the value delivered (time saved, self-serve rate,
+  deflections), what changed and why, the top topics, where answers fall
+  short, and what to do. Ask: *"how did our Kapa project do last month?"*
+- `kapa-gaps` gives a quick list of the biggest gaps and topics, without a
+  docs repository.
+
+Both main skills also run unattended as a scheduled task, such as a weekly
+report or a weekly pull request against your docs.
