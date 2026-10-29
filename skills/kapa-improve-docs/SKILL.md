@@ -60,9 +60,11 @@ Then merge:
    times, test traffic, and agent traffic: requests that read like
    instructions ("set up a webcrawl for…") come from agents such as this plugin's
    setup skills, not from people reading the docs.
-3. Drop items the docs now cover (read them), items an open pull request already
-   covers (`gh pr list --search <topic>` or the host's equivalent), and items the
-   log closed, unless their volume has since clearly grown.
+3. Drop items the docs now answer where people would look (read them), items an
+   open pull request already covers (`gh pr list --search <topic>` or the host's
+   equivalent), and items the log closed, unless their volume has since clearly
+   grown. Keep an item the docs cover but people still miss: it may need a better
+   heading, wording or link.
 
 Show the user the ranked list, with counts and one representative question per
 item, and agree where to start.
@@ -72,7 +74,8 @@ item, and agree where to start.
 For each item, follow the method for its kind in [the methods](references/methods.md):
 read the conversations behind it, read the pages, and decide between a change to
 the docs and no change. The bar for a change is high: name the page, the change,
-the counts and at least three verbatim questions it would have helped.
+the counts and at least three questions it would have helped, quoted as asked
+but never with names, emails or other personal data from the conversations.
 
 Present the recommendation, wait for the user's decision, and make the edit if
 they want it now. Record every decision in the log, including "no change".

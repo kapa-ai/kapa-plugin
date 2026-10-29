@@ -16,6 +16,8 @@ change has to earn its place.
   another page, or on no page that exists yet.
 - Count unique users, not threads. Ten threads from one person is one person.
 - Questions in other languages count the same; quote them as written.
+- Quote questions only as short examples, and never with names, emails or other
+  personal data from the conversations.
 
 ## Gaps: uncertain answers and coverage gap clusters
 
@@ -75,7 +77,8 @@ example that no longer works. Fix the source, not the symptom.
 
 - The page to edit or create, and the change in one or two sentences.
 - The counts: conversations, unique users, and which signals.
-- At least three verbatim questions the change would have helped.
+- At least three questions the change would have helped, quoted as asked, without
+  personal data.
 - What the docs say today, with the file path.
 - For anything informed by the internal project, the capability statement only,
   flagged for review.
