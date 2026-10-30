@@ -1,7 +1,7 @@
 {
   "name": "kapa",
   "displayName": "Kapa",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Connect Claude to Kapa to search all your company's knowledge from one place, and put that same knowledge to work in your own agents and on your website. Kapa ingests 20+ source types into one knowledge base, syncs only what changed so most sources stay current within minutes, and returns results with source links.",
   "author": {
     "name": "Kapa",

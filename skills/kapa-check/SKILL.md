@@ -7,7 +7,9 @@ description: Check what a Kapa project holds and whether it answers questions. U
 
 1. Call `list_sources` for the project and show what it holds and where each
    source has got to.
-2. Ask the user for a question their content should answer, call
-   `search_project_knowledge` with it, and show what comes back.
+2. Ask the user for a question their content should answer, and tell them the
+   search is a real query that counts toward the project's quota and appears in
+   its analytics. Then call `search_project_knowledge` with it and show what
+   comes back.
 3. If the answer is thin or wrong, say what would cause that rather than
    declaring success.

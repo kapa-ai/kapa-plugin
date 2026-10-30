@@ -39,6 +39,18 @@ the out-of-band setup people miss, such as inviting a Slack bot to the channel
 or sharing Notion pages with the integration. Load the one that matches what
 the user chose rather than working it out from tool descriptions.
 
+## Reading analytics
+
+`kapa-improve-docs` turns what people ask into documentation changes, and
+`kapa-analytics-report` writes a report for a period. Load them rather than
+working the calls out yourself. Two things to know either way:
+
+- Ask for summaries first: `get_top_questions` and `get_coverage_gaps` with
+  `threads_limit=0`, and `search_conversations` with a `page_size` around 25.
+  Full results are large.
+- Shorter coverage gap periods are often empty; fall back to the quarterly
+  period and say so.
+
 ## Rules that matter
 
 - **Credentials belong to the user.** Ask for every token and key. Never
@@ -46,9 +58,14 @@ the user chose rather than working it out from tool descriptions.
 - **Ingesting spends quota.** Saving a source's configuration starts
   ingestion, and so does `start_crawl` for a web crawl. Confirm with the user
   before either.
+- **Searching a project is a real query.** `search_project_knowledge` counts
+  toward the project's quota and appears in its analytics. Tell the user which
+  project and roughly how many searches, and wait for their go-ahead.
 - **Do not choose filters for people.** What belongs in a knowledge base
   differs per team, so show the options and ask.
 - **Check before you save.** Every source has a validate tool and most have
   discovery tools. Use them: a wrong credential otherwise shows up as a source
   that silently ingests nothing.
 - **Use `search_kapa_docs`** when unsure how a Kapa feature works.
+- **Conversations are end-user content.** Quote them only as short examples,
+  never with names or other personal data.
