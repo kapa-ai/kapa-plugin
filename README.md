@@ -89,6 +89,7 @@ The following knowledge sources are supported:
 - [OpenAPI](https://docs.kapa.ai/knowledge-sources/connectors/openapi)
 - [YouTube](https://docs.kapa.ai/knowledge-sources/connectors/youtube)
 - [S3](https://docs.kapa.ai/knowledge-sources/connectors/s3-storage)
+- [File upload](https://docs.kapa.ai/knowledge-sources/connectors/file-upload)
 - [Hand-written answers](https://docs.kapa.ai/knowledge-sources/connectors/custom-qa)
 
 ### Search your knowledge base
